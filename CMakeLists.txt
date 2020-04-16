@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(PL_0_2
-        src/file-proccess.cpp
+        src/file-process.cpp
         Readme.md src/main.cpp src/variables.h)
