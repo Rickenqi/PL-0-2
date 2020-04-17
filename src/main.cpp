@@ -5,11 +5,14 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    string filename = argv[1];
-    input_file(filename);
-    for (auto& c : content) {
-        cout << c << endl;
+    for(int i = 1; i < argc; i++) {
+        string filename = argv[i];
+        input_file(filename);
+        for (auto &c : content) {
+            // 在这里调用各种其他函数进行处理
+            cout << c << endl;
+        }
+        output_file(filename);
     }
-    output_file(filename);
     return 0;
 }
