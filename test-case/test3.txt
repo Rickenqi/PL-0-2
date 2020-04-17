@@ -1,15 +1,9 @@
-(a: 1)
-(zhijiao: 2)
-(b: 1)
-(c: 1)
-(flag: 2)
-(yiban: 1)
-(dengyaozhijiao : 1)
-(flag3: 1)
-(flag2: 1)
-(fei: 1)
-(dengyao : 1)
-(dengbian: 1)
-(x: 2)
-(y: 2)
-(z: 2)
+var a, b, c, flag, x, y, z, flag2, flag3;
+const yiban=0, dengyao = 1, dengyaozhijiao = 2, zhijiao=3, dengbian=4, fei=5;
+    begin
+        if x*x + y*y = z*z then
+            begin
+                write(zhijiao);
+                flag := 1;
+            end;
+    end;

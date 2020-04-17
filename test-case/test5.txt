@@ -1,7 +1,6 @@
-(dengyao : 1)
-(zhijiao: 1)
-(yiban: 1)
-(dengyaozhijiao : 1)
-(dengbian: 1)
-(flag3: 2)
-(fei: 2)
+var flag3;
+const yiban=0, dengyao = 1, dengyaozhijiao = 2, zhijiao=3, dengbian=4, fei=5;
+if flag3 # 1 then
+        begin
+            write(fei)
+        end;
