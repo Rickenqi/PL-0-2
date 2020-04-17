@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
 {
     for(int i = 1; i < argc; i++) {
         string filename = argv[i];
+        cout << "compiling the file: " << filename << endl;
         input_file(filename);
         for (auto &c : content) {
             // 在这里调用各种其他函数进行处理
