@@ -1,0 +1,7 @@
+(dengyao : 1)
+(zhijiao: 1)
+(yiban: 1)
+(dengyaozhijiao : 1)
+(dengbian: 1)
+(flag3: 2)
+(fei: 2)
