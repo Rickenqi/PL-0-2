@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    init();
     for(int i = 1; i < argc; i++) {
         string filename = argv[i];
         cout << "compiling the file: " << filename << endl;

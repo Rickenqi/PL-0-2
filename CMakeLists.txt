@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(PL_0_2
         src/file-process.cpp
-        Readme.md src/main.cpp src/variables.h)
+        Readme.md src/main.cpp src/variables.h src/init-process.cpp)
