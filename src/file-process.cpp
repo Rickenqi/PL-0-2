@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <cctype>
 using namespace std;
 
 std::vector<string> content;
@@ -14,6 +15,7 @@ void input_file(string filename)
     string read;
     while (getline(infile, read))
     {
+        transform(read.begin(),read.end(),read.begin(), ::tolower);
         content.push_back(read);
     }
     infile.close();
