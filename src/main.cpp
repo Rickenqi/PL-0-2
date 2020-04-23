@@ -3,6 +3,41 @@
 #include <iostream>
 using namespace std;
 
+void deal(string &line)
+{
+    regex number("[0-9]+"),identifier("[a-z]([a-z]|[0-9])*");
+    string cur;
+    for(int i=0;i<line.length();++i)
+    {
+        if(line[i]==' '||ender.count(line[i]))
+        {
+            if(cur.length()&&encoder.count(cur))
+                total.emplace_back(encoder[cur],cur);
+            else if(cur.length()&&regex_match(cur,identifier))
+                total.emplace_back("ident",cur);
+            else if(cur.length()&&regex_match(cur,number))
+                total.emplace_back("number",cur);
+            else if(cur.length())
+            {
+                //total.emplace_back("error",cur);
+            }
+            cur="";
+            if(line[i]!=' ')
+            {
+                string Ender;
+                Ender+=line[i];
+                if(i+1<line.length()&&encoder.count(Ender+line[i+1]))
+                {
+                    Ender+=line[i+1];
+                    i++;
+                }
+                total.emplace_back(encoder[Ender],Ender);
+            }
+            continue;
+        }
+        cur+=line[i];
+    }
+}
 int main(int argc, char *argv[])
 {
     init();
@@ -11,7 +46,7 @@ int main(int argc, char *argv[])
         cout << "compiling the file: " << filename << endl;
         input_file(filename);
         for (auto &c : content) {
-            // 在这里调用各种其他函数进行处理
+            deal(c);
             cout << c << endl;
         }
         output_file(filename);

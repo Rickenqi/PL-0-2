@@ -1,5 +1,4 @@
 var a, b, c, r;
-{ 将a, b, c排序 }
 begin
     read(a);
     read(b);

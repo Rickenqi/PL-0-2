@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lin88/homework/PL-0-2/src/main.cpp
+variables.h
+/home/lin88/homework/PL-0-2/src/variables.h
+fstream
+-
+iostream
+-
+
+/home/lin88/homework/PL-0-2/src/variables.h
+list
+-
+string
+-
+vector
+-
+map
+-
+regex
+-
+set
+-
+
