@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/PL_0_2.dir/src/file-process.cpp.o CMakeFiles/PL_0_2.dir/src/main.cpp.o CMakeFiles/PL_0_2.dir/src/init-process.cpp.o  -o PL_0_2 

@@ -17,6 +17,8 @@ void input_file(string filename)
     while (getline(infile, read))
     {
         transform(read.begin(),read.end(),read.begin(), ::tolower);
+        read.erase(0, read.find_first_not_of(' '));
+        read.erase(read.find_last_not_of(' ')+1);
         content.push_back(read);
     }
     infile.close();

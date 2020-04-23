@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
         cout << "compiling the file: " << filename << endl;
         input_file(filename);
         for (auto &c : content) {
-            deal(c);
+            // deal(c);
             cout << c << endl;
         }
         output_file(filename);
